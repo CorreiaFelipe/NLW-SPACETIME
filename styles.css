@@ -9,7 +9,6 @@
 }
 
 ::-webkit-scrollbar {
-
   width: 8px;
 }
 ::-webkit-scrollbar-track {
@@ -29,11 +28,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-
-
-
 }
-  
 
 body {
   background-color: #121215;
@@ -84,7 +79,7 @@ nav {
 }
 
 .memory:hover img {
-  transform: scale(1.1) ;
+  transform: scale(1.1);
 }
 
 .memory div {
@@ -92,10 +87,7 @@ nav {
   height: 280px;
   overflow: hidden;
   border-radius: 8px;
-
 }
-
-
 
 .memory p {
   font-size: 1.2rem;
@@ -118,12 +110,11 @@ aside {
   background-image: url("./assets/background.svg");
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: auto 100%;  
+  background-size: auto 100%;
 }
 aside * {
   animation: entering 0.7s ease-in-out;
 }
-
 
 aside img:nth-child(2) {
   width: 160px;
@@ -138,6 +129,7 @@ aside img:nth-child(2) {
 aside p {
   font-size: 2rem;
   text-align: center;
+  color: #ddd9e7;
 }
 
 aside span {
@@ -145,19 +137,17 @@ aside span {
   color: #9e9ea0;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   :root {
     font-size: 14px;
-
   }
-
 
   body {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 0.8fr;
-    grid-template-areas: 
-    "profile"
-    "timeline";
+    grid-template-areas:
+      "profile"
+      "timeline";
   }
   aside {
     border-right: none;
@@ -166,7 +156,5 @@ aside span {
   nav {
     overflow-y: visible;
     padding: 22px;
-
   }
-
 }
